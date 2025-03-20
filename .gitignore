@@ -1,0 +1,16 @@
+# Binaries & Intermediate
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+Build/
+
+# VSCode & VS Files
+.vscode/
+*.sln
+*.VC.db
+*.VC.opendb
+
+
+
+.vs/
