@@ -30,6 +30,8 @@ public:
 	int32 GetRemainingTurn() const;
 	UFUNCTION(BlueprintCallable, Category = "State")
 	FString GetUserID() const;
+	UFUNCTION(BlueprintCallable, Category = "State")
+	void GiveTicketToUser();
 	UFUNCTION()
 	void OnRep_UserID();
 
@@ -38,10 +40,13 @@ public:
 	int32 PlayerScore;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "State")
 	int32 RemainingTurn;
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "State")
-	bool bIsOut;
 	UPROPERTY(ReplicatedUsing=OnRep_UserID, BlueprintReadOnly, Category = "State")
 	FString UserID;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "State")
+	bool bIsOut;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "State")
+	bool bHasTicket;
+
 
 protected:
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;

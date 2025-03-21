@@ -8,7 +8,8 @@ AWNPlayerState::AWNPlayerState()
 {
 	PlayerScore = 0;
 	RemainingTurn = 3;
-	bIsOut = false;
+	bIsOut = true;
+	bHasTicket = false;
 	bReplicates = true;
 
 	if (HasAuthority())
@@ -69,6 +70,11 @@ void AWNPlayerState::OnRep_UserID()
 FString AWNPlayerState::GetUserID() const
 {
 	return UserID;
+}
+
+void AWNPlayerState::GiveTicketToUser()
+{
+	bHasTicket = true;
 }
 
 void AWNPlayerState::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
