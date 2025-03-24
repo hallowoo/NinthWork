@@ -65,7 +65,7 @@
 - 조건이 만족되면 결과 반환
 
 FString UMake3RandNum::Make3RandNum()
-}
+{
 	FString GoalNumber = "";
 	std::random_device randDevice;
 	FMath::RandInit(randDevice());
