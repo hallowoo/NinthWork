@@ -64,52 +64,11 @@
 - 앞자리에 '/'를 배치하고 총 4자리를 만족하지 못하면 함수 다시 실행
 - 조건이 만족되면 결과 반환
 
-```c++
-FString UMake3RandNum::Make3RandNum()
-{
-	FString GoalNumber = "";
-	std::random_device randDevice;
-	FMath::RandInit(randDevice());
-
-	while (GoalNumber.IsEmpty())
-	{
-		int32 RandomNumber = FMath::RandRange(0, 9);
-		if (RandomNumber != 0)
-		{
-			GoalNumber.AppendInt(RandomNumber);
-		}
-	}
-
-	while (GoalNumber.Len() <= 2)
-	{
-		bool bIsUnique = true;
-		int32 RandomNumber = FMath::RandRange(0, 9);
-
-		for (int i = 0; i < GoalNumber.Len(); i++)
-		{
-			if (GoalNumber[i] == TCHAR('0' + RandomNumber))
-			{
-				bIsUnique = false;
-				break;
-			}
-		}
-
-		if (bIsUnique)
-		{
-			GoalNumber.AppendInt(RandomNumber);
-		}
-	}
-
-	GoalNumber.InsertAt(0, TEXT("/"));
-
-	if (GoalNumber.Len() != 4)
-	{
-		Make3RandNum();
-	}
-
-	return GoalNumber;
-}
-```
-
 ### 답 판정 로직
+
+- 답입력 판정 로직에서 플레이어가 답입력을 시도했는지 판단
+- 답입력일 시 '/'를 제외한 두번째 자리부터 반복문으로 정답숫자와 차례로 비교
+- 정답숫자의 해당 자리에 같은 숫자가 있을 시 스트라이크 카운트 증가
+- 해당 자리의 숫자가 정답숫자의 다른 자리에 존재할 시 볼 카운트 증가
+- 반복 종료 후 스트라이크 카운트와 볼 카운트 반환
 
