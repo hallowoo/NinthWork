@@ -63,7 +63,7 @@
 - 3자리가 채워질때까지 중복되지 않는 임의의 숫자를 배치
 - 앞자리에 '/'를 배치하고 총 4자리를 만족하지 못하면 함수 다시 실행
 - 조건이 만족되면 결과 반환
-
+'''
 FString UMake3RandNum::Make3RandNum()
 {
 	FString GoalNumber = "";
@@ -108,7 +108,7 @@ FString UMake3RandNum::Make3RandNum()
 
 	return GoalNumber;
 }
-
+'''
 
 ### 답 판정 로직
 
