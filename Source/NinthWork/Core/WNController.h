@@ -16,6 +16,4 @@ public:
 	UFUNCTION(Server, Reliable, BlueprintCallable)
 	void SendIDForSetToState(const FString& ID);
 
-
-	//void UpdateScoreWidget();
 };
