@@ -52,7 +52,7 @@
 
 ### 프로젝트 구조
 
-![NinthWork-페이지-3 drawio](https://github.com/user-attachments/assets/69750fee-e915-4da6-a2bc-6ac3841f1f0f)
+![NinthWork-페이지-3 drawio](https://github.com/user-attachments/assets/955b74bc-e3fd-4da7-8bbf-253f1119b119)
 
 
 ## 주요 로직
