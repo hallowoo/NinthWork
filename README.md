@@ -1,10 +1,10 @@
 # Bulls and Cows
----
+
 작업기간 : 2025.03.13(목) - 2025.03.25(월)
 
 
-# 프로젝트 소개
----
+## 프로젝트 소개
+
 ![image](https://github.com/user-attachments/assets/8a045509-ec0f-4418-b233-91ce32087b76)
 
 ### BUlls and Cows
@@ -12,6 +12,16 @@
 'Bulls and Cows'는 숫자야구의 영어식 표기입니다.
 
 이 게임은 숫자야구 게임을 바탕으로 한 텍스트 기반 턴제 퍼즐보드게임입니다.
+
+
+### 프로젝트 목표
+- 실시간 멀티플레이 구현
+
+  플레이어간 소통이 가능한 멀티플레이 구조
+
+- 플레이어간 정보 공유
+
+  게임의 진행과 결과를 플레이어들이 모두 공유하도록 처리
 
 
 ### 기본 룰
@@ -30,8 +40,35 @@
 - '/'를 붙이지 않으면 자유롭게 채팅이 가능합니다.
 - 원하는 만큼 게임은 반복할 수 있습니다.
 
+## 프로젝트 내용
+
 ### 기본 흐름
 
-![image](https://github.com/user-attachments/assets/aa4f633c-c0ec-4697-855b-d6bdfed6427f)
+![NinthWork-페이지-2 drawio](https://github.com/user-attachments/assets/0bfda761-4c4d-4c6a-b059-4d6d8cd6c791)
 
-![image](https://github.com/user-attachments/assets/076c90a9-5d18-4c8d-9171-32e7a2e754e9)
+### 알고리즘
+
+![NinthWork-Page-1 drawio](https://github.com/user-attachments/assets/523340d9-8a47-475e-869d-546fe9ae5b60)
+
+### 프로젝트 구조
+
+![NinthWork-페이지-3 drawio](https://github.com/user-attachments/assets/ec9af11e-1fc9-47a1-afee-5f80735df52f)
+
+## 주요 로직
+
+### 정답 숫자 생성 로직
+
+- std::rangom_device로 임의의 시드를 부여한 FMath::RandInit()을 사용해서 숫자생성의 임의성을 강화
+- 첫번째 자리에 0이 아닌 1 - 9의 숫자 중 하나를 배치
+- 3자리가 채워질때까지 중복되지 않는 임의의 숫자를 배치
+- 앞자리에 '/'를 배치하고 총 4자리를 만족하지 못하면 함수 다시 실행
+- 조건이 만족되면 결과 반환
+
+### 답 판정 로직
+
+- 답입력 판정 로직에서 플레이어가 답입력을 시도했는지 판단
+- 답입력일 시 '/'를 제외한 두번째 자리부터 반복문으로 정답숫자와 차례로 비교
+- 정답숫자의 해당 자리에 같은 숫자가 있을 시 스트라이크 카운트 증가
+- 해당 자리의 숫자가 정답숫자의 다른 자리에 존재할 시 볼 카운트 증가
+- 반복 종료 후 스트라이크 카운트와 볼 카운트 반환
+
