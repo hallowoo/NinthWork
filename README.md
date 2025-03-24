@@ -98,6 +98,28 @@
 - 해당 자리의 숫자가 정답숫자의 다른 자리에 존재할 시 볼 카운트 증가
 - 반복 종료 후 스트라이크 카운트와 볼 카운트 반환
 
+
+## 기타 로직
+
+### 인덱스를 활용한 턴 구현
+![image](https://github.com/user-attachments/assets/08b95aec-6863-4307-a8fa-8cc1ed145953)
+![image](https://github.com/user-attachments/assets/acd9c9b6-7f56-4aea-beab-5cc59549934e)
+
+### 타이머 로직
+![image](https://github.com/user-attachments/assets/03ed078b-9081-4798-acde-a4fac941e638)
+
+### 플레이어 참여 자격 부여 로직
+![image](https://github.com/user-attachments/assets/850e7b59-755f-4ea5-8fbb-12327af7cde5)
+
+
+### 사운드 재생
+
+- 스위치를 활용하여 키워드로 재생 및 정지
+![image](https://github.com/user-attachments/assets/f884737e-3cc0-4bcc-9407-dbca7bf7a63b)
+
+![image](https://github.com/user-attachments/assets/3da723cd-95b7-4eb7-8344-e7ed6d7c225f)
+
+
 ## 제작
 
 서승우(언리얼 2기)
