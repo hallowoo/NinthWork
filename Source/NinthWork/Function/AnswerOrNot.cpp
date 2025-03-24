@@ -18,6 +18,17 @@ bool UAnswerOrNot::AnswerOrNot(FString Massage)
 			{
 				return false;
 			}
+
+			for (int j = 1; j < 4; j++)
+			{
+				if (j != i)
+				{
+					if (Massage[i] == Massage[j])
+					{
+						return false;
+					}
+				}
+			}
 		}
 		return true;
 	}
