@@ -14,6 +14,16 @@
 이 게임은 숫자야구 게임을 바탕으로 한 텍스트 기반 턴제 퍼즐보드게임입니다.
 
 
+### 프로젝트 목표
+- 실시간 멀티플레이 구현
+
+  플레이어간 소통이 가능한 멀티플레이 구조
+
+- 플레이어간 정보 공유
+
+  게임의 진행과 결과를 플레이어들이 모두 공유하도록 처리
+
+
 ### 기본 룰
 
 - ID를 입력하면 참가자격이 주어집니다.
@@ -37,3 +47,8 @@
 ### 알고리즘
 
 ![NinthWork-Page-1 drawio](https://github.com/user-attachments/assets/523340d9-8a47-475e-869d-546fe9ae5b60)
+
+### 프로젝트 구조
+
+![NinthWork-페이지-3 drawio](https://github.com/user-attachments/assets/ec9af11e-1fc9-47a1-afee-5f80735df52f)
+
