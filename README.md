@@ -32,6 +32,8 @@
 
 ### 기본 흐름
 
-![image](https://github.com/user-attachments/assets/aa4f633c-c0ec-4697-855b-d6bdfed6427f)
+![NinthWork-페이지-2 drawio](https://github.com/user-attachments/assets/0bfda761-4c4d-4c6a-b059-4d6d8cd6c791)
 
-![image](https://github.com/user-attachments/assets/076c90a9-5d18-4c8d-9171-32e7a2e754e9)
+### 알고리즘
+
+![NinthWork-Page-1 drawio](https://github.com/user-attachments/assets/523340d9-8a47-475e-869d-546fe9ae5b60)
