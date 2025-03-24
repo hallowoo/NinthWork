@@ -7,7 +7,7 @@
 
 ![image](https://github.com/user-attachments/assets/8a045509-ec0f-4418-b233-91ce32087b76)
 
-### BUlls and Cows
+### Bulls and Cows
 
 'Bulls and Cows'는 숫자야구의 영어식 표기입니다.
 
@@ -52,7 +52,8 @@
 
 ### 프로젝트 구조
 
-![NinthWork-페이지-3 drawio](https://github.com/user-attachments/assets/ec9af11e-1fc9-47a1-afee-5f80735df52f)
+![NinthWork-페이지-3 drawio](https://github.com/user-attachments/assets/69750fee-e915-4da6-a2bc-6ac3841f1f0f)
+
 
 ## 주요 로직
 
