@@ -5,7 +5,8 @@
 
 ## 프로젝트 소개
 
-![image](https://github.com/user-attachments/assets/8a045509-ec0f-4418-b233-91ce32087b76)
+![image](https://github.com/user-attachments/assets/63ad58b4-871f-45a4-ba13-2ed302fc8aa2)
+
 
 ### Bulls and Cows
 
